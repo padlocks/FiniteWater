@@ -1,0 +1,5 @@
+{
+  "finite": "asm/finite.js",
+  "infinitelava": "asm/infinitelava.js"
+
+}
