@@ -1,0 +1,17 @@
+{
+  "required": true,
+  "package": "tfar.finitewater.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "refmap": "finitewater.refmap.json",
+  "mixins": [
+    "FlowingFluidMixin",
+    "LavaFluidMixin",
+    "WaterFluidMixin"
+  ],
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "minVersion": "0.8"
+}
