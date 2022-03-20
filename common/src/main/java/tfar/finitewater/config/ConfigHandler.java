@@ -58,6 +58,7 @@ public class ConfigHandler {
 
     public void save() {
         prepareConfigFile();
+        config = new Config();
 
         Gson gson = new GsonBuilder().setPrettyPrinting().create();
         String jsonString = gson.toJson(config);
