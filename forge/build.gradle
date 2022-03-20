@@ -2,12 +2,6 @@ plugins {
     id "com.github.johnrengelman.shadow" version "7.0.0"
 }
 
-loom {
-    forge{
-        mixinConfig "tesseract.mixins.json"
-    }
-}
-
 architectury {
     platformSetupLoomIde()
     forge()

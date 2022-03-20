@@ -1,4 +1,4 @@
-package tfar.finitewater.mixin;
+package tfar.finitewater.mixin.fabric;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.level.LevelReader;

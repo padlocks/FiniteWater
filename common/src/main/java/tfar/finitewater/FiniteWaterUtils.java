@@ -1,8 +1,6 @@
 package tfar.finitewater;
 
 import net.minecraft.core.Holder;
-import net.minecraft.server.MinecraftServer;
-import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.level.biome.Biome;
 import net.minecraft.world.level.material.Fluid;
 import net.minecraft.world.level.material.Fluids;
@@ -16,7 +14,7 @@ public class FiniteWaterUtils {
     public static boolean formWaterSource(Fluid fluid, Holder<Biome> biome){
         boolean form = true;
         if (fluid == Fluids.WATER) {
-            if (isWaterInfinite(biome) != ConfigHandler.CONFIG_HANDLER.getConfig().isWaterWhitelisted()) {
+            if (isWaterInfinite(biome) != ConfigHandler.CONFIG_HANDLER.getConfig().isWaterWhitelist()) {
                 form = false;
             }
         }

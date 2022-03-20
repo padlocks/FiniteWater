@@ -8,6 +8,7 @@ import java.io.File;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.nio.file.Path;
 
 public class ConfigHandler {
     public static final ConfigHandler CONFIG_HANDLER = new ConfigHandler();
@@ -17,16 +18,16 @@ public class ConfigHandler {
     private ConfigHandler() {
     }
 
-    private void prepareConfigFile() {
+    private boolean prepareConfigFile() {
         if (file != null) {
-            return;
+            return false;
         }
         File configDirectory = new File(".", "config");
         file = new File(configDirectory, "finitewater.json");
-
-        if (!configDirectory.exists()) {
-            configDirectory.mkdir();
+        if (file.exists()){
+            return false;
         }
+        return true;
     }
 
     public Config getConfig() {
@@ -57,7 +58,9 @@ public class ConfigHandler {
     }
 
     public void save() {
-        prepareConfigFile();
+        if (!prepareConfigFile()){
+            return;
+        }
         config = new Config();
 
         Gson gson = new GsonBuilder().setPrettyPrinting().create();

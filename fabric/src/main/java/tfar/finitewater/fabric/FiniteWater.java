@@ -1,4 +1,4 @@
-package tfar.finitewater;
+package tfar.finitewater.fabric;
 
 import net.fabricmc.api.ModInitializer;
 import tfar.finitewater.config.ConfigHandler;

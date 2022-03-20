@@ -1,4 +1,4 @@
-package tfar.finitewater;
+package tfar.finitewater.forge;
 
 
 import net.minecraft.core.Holder;
@@ -7,10 +7,10 @@ import net.minecraft.world.level.material.Fluid;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.world.BlockEvent;
 import net.minecraftforge.eventbus.api.Event;
-import net.minecraftforge.fml.DeferredWorkQueue;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import tfar.finitewater.FiniteWaterUtils;
 import tfar.finitewater.config.ConfigHandler;
 
 // The value here should match an entry in the META-INF/mods.toml file
