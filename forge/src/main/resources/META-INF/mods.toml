@@ -1,0 +1,27 @@
+modLoader="javafml"
+loaderVersion="[39,)"
+issueTrackerURL="https://github.com/Trinsdar/FiniteWater/issues"
+license="LGPL-v3"
+
+[[mods]]
+modId="finitewater"
+version="${version}"
+displayName="No more Infinite Water"
+#updateJSONURL="http://myurl.me/"
+displayURL="https://github.com/Trinsdar/FiniteWater"
+#logoFile="assets/finitewater/icon.png"
+authors="Tfarcenim, Trinsdar"
+credits="Tfarcenim - for making this mod originally in 1.16"
+description='''Makes water no longer infinite if not in water type biomes'''
+[[dependencies.finitewater]]
+    modId="forge"
+    mandatory=true
+    versionRange="[39,)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.finitewater]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.18,]"
+    ordering="NONE"
+    side="BOTH"

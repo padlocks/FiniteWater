@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "finitewater",
+  "version": "${version}",
+  "name": "No more Infinite water",
+  "description": "Makes water no longer infinite if not in water type biomes",
+  "authors": [
+    "Tfarcenim",
+    "Trinsdar"
+  ],
+  "contact": {
+    "sources": "https://github.com/Trinsdar/FiniteWater"
+  },
+  "license": "LGPL-3.0-only",
+  "environment": "*",
+  "mixins": [
+    "finitewater.mixins.json"
+  ],
+  "entrypoints": {
+    "main": [
+      "tfar.finitewater.FiniteWater"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.4.0",
+    "fabric": "*"
+  }
+}
