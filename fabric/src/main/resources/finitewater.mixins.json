@@ -1,10 +1,11 @@
 {
   "required": true,
   "package": "tfar.finitewater.mixin",
-  "compatibilityLevel": "JAVA_16",
+  "compatibilityLevel": "JAVA_17",
   "minVersion": "0.8",
   "mixins": [
-    "fabric.FlowingFluidMixin"
+    "fabric.FlowingFluidMixin",
+    "fabric.BottleItemMixin"
   ],
   "injectors": {
     "defaultRequire": 1
